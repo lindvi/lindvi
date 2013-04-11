@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <%= render 'layouts/shim' %>    
+  </head>
+ <body>
+    <% render 'layouts/header' %>
+    <div class="push-down">
+        <div class="row-fluid">
+            <div class="span8 offset2">
+              <% flash.each do |key, value| %>
+                <div class="alert alert-<%= key %>"><%= value %></div>
+              <% end %>
+              <%= yield %>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
