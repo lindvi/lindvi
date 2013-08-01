@@ -3,7 +3,8 @@ Lindvi::Application.routes.draw do
   root :to => 'static_pages#home'
 
   match '/dev', :to => 'static_pages#dev'
-  
+
+  match '/mail', :to => 'public#wat'  
   resources :sites do
     member do 
       get 'status'

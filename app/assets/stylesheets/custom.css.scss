@@ -5,14 +5,16 @@ $imageWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 
 
 html{
-  width: 100%;
+  /*background:url(bg1.png), url(bg3.png) ;
   background:url(bg1.png), url(bg2.png),  url(bg4.png) , url(bg3.png) ;
   background-position: 50% 0px, 50%  0px, 50% 0px, 50% 0px;
   background-color: #353838;
+  */
 }
 
 body{
-  background: transparent;
+  background: url(sf-bkg.png);
+  background-size: 100%;
 }
 
 /* header */
@@ -51,8 +53,25 @@ body{
   margin-top: 40px;
 }
 
+
 .home{
   width: 100%;
   background: url(lindvi.png);
   background-position: 0% 0px;
 }
+
+
+#left_menu{
+  background-color: white;
+  width: 280px;
+  opacity: 0.3;
+  border-right: 1px solid black;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+
+h1{
+  font-size: 80px;
+}
+

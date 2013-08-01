@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-
+    $('#left_menu').height($(document).height()-20);
+    /*
 
     a=parseFloat(0);// Initial value for the first background (bk 0)
     b=parseFloat(0);// Initial value for the second background (bk 1)
@@ -15,20 +16,22 @@ $(document).ready(function() {
         {
             a = a + 12;
             b = b + 16;
-            c = c + 20;
+            c = c + 30;
             d = d + 24;
+           $("html").css('background-position', '50% ' + a + 'px, 50% ' + b + 'px');
             
-           $("html").css('background-position', '0% ' + a + 'px, 0% ' + b + 'px, 0% ' + c + 'px, 0% ' + d + 'px');
+//           $("html").css('background-position', '50% ' + a + 'px, 50% ' + b + 'px, 50% ' + c + 'px, 50% ' + d + 'px');
         }
         else
         {// Scroll down
            
             a = a - 12;
             b = b - 16;
-            c = c - 20;
+            c = c - 30;
             d = d - 24;
+              $("html").css('background-position', '50% ' + a + 'px, 50% ' + b + 'px');
 
-           $("html").css('background-position', '0% ' + a + 'px, 0% ' + b + 'px, 0% ' + c + 'px, 0% ' + d + 'px');
+//           $("html").css('background-position', '50% ' + a + 'px, 50% ' + b + 'px, 50% ' + c + 'px, 50% ' + d + 'px');
         
      
         }
@@ -42,9 +45,10 @@ $(document).ready(function() {
 
           $(document.body).css('background-position', '0% 0px, 0% 0px, 0% 0px, 0% 0px');
         
-        }*/
+        }
       scrollTop = $(this).scrollTop();
     });
+    */
 });
 
 
